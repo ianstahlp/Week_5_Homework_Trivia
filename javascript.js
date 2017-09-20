@@ -201,10 +201,14 @@
 
 
         var audioElement = document.createElement("audio");
-        audioElement.setAttribute("src", "assets/mp3/lightwaves.mp3");
+        audioElement.setAttribute("src", "assets/mp3/ff7-prelude.mp3");
 
         $(".theme-button").on("click", function() {
+        	
+        	$(".text").remove();
+        	$(".theme-button").text("ok but why tho")
             audioElement.play();
+
         });
 
 
@@ -252,7 +256,7 @@
         });
 
         quizContainer.innerHTML = outputHTML.join("");
-        
+
 
 
     };
@@ -292,12 +296,21 @@ else {
 
 
         });
-        resultsContainer.innerHTML = `${ numCorrect } out of  ${ff7.length}`;
+        $(".quizStart").remove();
+
+        resultsContainer.innerHTML = `<h1>You got ${ numCorrect } out of  ${ff7.length} Correct</h1>`;
 
 
     };
 
-  
+  function winDependency() {
+
+  	if (numCorrect === ff7.length) {
+
+  		resultsContainer.innerHTML = `<h1> You scored perfectly! Have nothing!</h1>`;
+  	}
+  }
+
 
 
     function slideShow(num) {
@@ -357,6 +370,7 @@ else {
     var currentSlide = 0;
 
      slideShow(0);
+       
 
 
     submission.addEventListener("click", showResults);

@@ -1,14 +1,4 @@
-/*label:hover {
-background-color: red;
 
-display: none;
-}
-
-input:active {
-	
-	background-color: red;
-}
-*/
 
 
 input[type=radio]:checked + label {
@@ -39,4 +29,16 @@ input[type=radio]:checked + label {
   position: relative;
   height: 200px;
   margin-top: 40px;
+}
+
+.jumbotron {
+
+	background-color: white;
+	opacity: .4;
+}
+
+body {
+	
+	background-color: black;
+	background-image: url("assets/images/background.jpg");
 }
