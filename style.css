@@ -34,11 +34,24 @@ input[type=radio]:checked + label {
 .jumbotron {
 
 	background-color: white;
-	opacity: .4;
+	opacity: .8;
 }
 
 body {
 	
 	background-color: black;
 	background-image: url("assets/images/background.jpg");
+	font-family: Times, serif;
+	color: #3a3838;
+
+}
+
+button {
+	border: none;
+	background-color: #555555;
+	color: white;
+	padding: 10px;
+	margin: 2px;
+
+
 }

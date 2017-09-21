@@ -168,6 +168,7 @@
     function timeRun() {
 
     	intervalId = setInterval(minusTime, 1000);
+    	quizBuild();
     }
 
     function minusTime() {
@@ -370,7 +371,7 @@ else {
     var currentSlide = 0;
 
      slideShow(0);
-       
+
 
 
     submission.addEventListener("click", showResults);
